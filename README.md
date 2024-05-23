@@ -7,6 +7,8 @@ This project was created, developed, and worked on by Jeremy Thummel, Owen Tusti
 <br>
 Our project ChatNow is a web application providing an online chat room experience, where users can create and join rooms to talk to whomever they want. ChatNow is built with Maven, and utilizes fetching transformed JSON data from Java, and implementing said data into the user interface via Jakarta EE's WebSocket objects. A video displaying the multi-chatting functionality can be found under the filename project.mp4 in the path “src/main/webapp/img”. It has been embedded in this file for ease of access.
 
+https://github.com/OntarioTech-CS-program/w24-csci2020u-assignment02-cumby-lee-thummel-tustinfuchs/assets/114171041/4debfed9-424b-43b5-9c44-708cb631987e
+
 <video controls>
     <source src="src/main/webapp/img/project.mp4">
     The current browser does not support the video.
