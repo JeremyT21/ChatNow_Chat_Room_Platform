@@ -9,11 +9,6 @@ Our project ChatNow is a web application providing an online chat room experienc
 
 https://github.com/OntarioTech-CS-program/w24-csci2020u-assignment02-cumby-lee-thummel-tustinfuchs/assets/114171041/4debfed9-424b-43b5-9c44-708cb631987e
 
-<video controls>
-    <source src="src/main/webapp/img/project.mp4">
-    The current browser does not support the video.
-</video>
-
 ## **Improvements (html/interactions)**
 UI - Different themes allow the user to customize their experience. Not only is there a fun Space theme, but the user can also enter the hex color code of the color they want to change their ChatNow background color to. There are pleasant and creative profile pictures assigned to users to help bring personality to ChatNow. A send button provides an extra method for the user to partake in sending a message, which is important since it is ChatNow’s main purpose. Hover styles also provide an extra layer of visual appeal.
 
