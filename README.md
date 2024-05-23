@@ -1,4 +1,4 @@
-# Web Chat Server
+# ChatNow
 > Course: CSCI 2020U: Software Systems Development and Integration
 
 ## Project Information
