@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat Server</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/settings.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- title bar -->
+        <div class="header">
+          <h1>ChatNow</h1>
+        </div>
+        <div class="main-content">
+            <div class="room-list">
+                <!-- left bar -->
+                <div class="settings-list">
+                    <a href="./settings.html"> <button class="create-room" id="createButton">Settings</button> </a>
+                    <a href="./about.html"> <button class="create-room" id="joinButton">About</button> </a>
+                </div>
+            </div>
+            <div class="room-info">
+                <!-- text area/bottom right section -->
+              <div class="room-name">
+                  <!-- top bar of text area -->
+                <h2 id="chatRoomName">Settings</h2>
+                <div class="go-back-to-rooms">
+                    <h3>Back to Chat Rooms</h3>
+                    <!-- image to return to index -->
+                    <a href="./index.html">
+                       <img class="settings" src="./img/settings.png" alt="settings icon" />
+                    </a>
+                </div>
+              </div>
+              <div class="chat-container">
+                <div class="color-settings">
+                    <!-- list of color buttons -->
+                  <div class="yellow">
+                    <p>Make the site yellow based</p>
+                    <button class="colorChanger" id="yellowButton" onclick="changeColor('y')">yellow</button>
+                  </div>
+                  <div class="purple">
+                    <p>Make the site purple based</p>
+                    <button class="colorChanger" id="purpleButton" onclick="changeColor('p')">purple</button>
+                  </div>
+                  <div class="green">
+                    <p>Make the site green based</p>
+                    <button class="colorChanger" id="greenButton" onclick="changeColor('g')">green</button>
+                  </div>
+                  <div class="space">
+                    <p>Make the site space themed</p>
+                    <button class="colorChanger" id="spaceButton" onclick="changeColor('s')">space</button>
+                  </div>
+                  <div class="chat-input">
+                      <!-- input and button for user choice -->
+                    <input type="text" class="color-input" id="colorInput" placeholder="Hex code for a color">
+                    <button class="send-button" id="sendButton" onclick="changeColor('random')">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/settings.js"></script>
+</body>

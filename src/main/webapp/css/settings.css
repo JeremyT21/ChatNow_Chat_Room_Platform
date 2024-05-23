@@ -1,0 +1,118 @@
+.settings-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--------- settings button ---------*/
+
+  .go-back-to-rooms {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .go-back-to-rooms h3 {
+    margin-left: 10px;
+    margin-right: 4px;
+  }
+
+/*--------- color buttons list ---------*/
+
+  .color-settings {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #000000;
+    background-color: #bdbdbd;
+  }
+
+/*--------- yellow button ---------*/
+
+  .yellow {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  .yellow:hover button {
+    opacity: 0.6;
+  }
+
+  .yellow p {
+    margin-right: 5px;
+  }
+
+  .yellow button {
+    color: #000000;
+    background-color: #a0aa18;
+  }
+
+/*--------- purple button ---------*/
+
+  .purple {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  .purple:hover button {
+    opacity: 0.6;
+  }
+
+  .purple p {
+    margin-right: 5px;
+  }
+
+  .purple button {
+    color: #ffffff;
+    background-color: #490985;
+  }
+
+/*--------- green button ---------*/
+
+  .green {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .green:hover button {
+    opacity: 0.6;
+  }
+
+  .green p {
+    margin-right: 5px;
+  }
+
+  .green button {
+    color: #000000;
+    background-color: #11ad2b;
+    transition: opacity 0.3s ease;
+  }
+
+/*--------- space button ---------*/
+
+  .space {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .space:hover button {
+    opacity: 0.6;
+  }
+
+  .space p {
+    margin-right: 5px;
+  }
+
+  .space button {
+    color: #ffffff;
+    background-color: #000000;
+    transition: opacity 0.3s ease;
+  }

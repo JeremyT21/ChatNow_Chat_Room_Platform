@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Chat Server</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="theme-color" content="#fafafa">
+  </head>
+
+  <body>
+    <!-- Add your site or application content here -->
+
+    <div class="container">
+      <div class="header">
+        <h1>ChatNow</h1>
+      </div>
+      <div class="main-content">
+        <!-- left bar -->
+        <div class="room-list">
+          <button class="create-room" id="createButton" onclick="newRoom()">CREATE ROOM</button>
+          <button class="create-room" id="refreshButton" onclick="refreshRooms()">REFRESH ROOMS</button>
+          <h2 id="whiteText">Chat Rooms</h2>
+          <!-- box for current rooms -->
+          <div id="roomListMenu"></div>
+          <input type="text" class="message-input" id="roomInput" placeholder="Join a room!">
+          <button class="send-button" id="roomEnterButton" onclick="joinRoom()">JOIN</button>
+        </div>
+        <!-- room section/bottom right -->
+        <div class="room-info">
+          <!-- top bar of room -->
+          <div class="room-name">
+            <div id="roomNameChange">
+              <h2 id="chatRoomName">Room Name</h2>
+              <input type="text" class="message-input" id="roomNameInput" placeholder="Enter room name...">
+              <button class="send-button" id="roomNameButton" onclick="changeRoomName()">Change</button>
+            </div>
+            <!-- image that sends to settings -->
+            <a href="./settings.html">
+              <img class="settings" src="./img/settings.png" alt="settings icon" />
+            </a>
+          </div>
+          <!-- chat area -->
+          <div class="chat-container">
+            <div id="chat-messages">
+            </div>
+            <!-- input for messages and send button -->
+            <div class="chat-input">
+              <input type="text" class="message-input" id="messageInput" placeholder="Type your message...">
+              <button class="send-button" id="sendButton" onclick="sendMessage()">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- load js -->
+    <script src="js/main.js"></script>
+    <script src="js/settings.js"></script>
+    <!-- fills room list when loading in/for leaving to settings and coming back -->
+    <script>window.addEventListener('load', refreshRooms)</script>
+  </body>
+
+</html>
+
+

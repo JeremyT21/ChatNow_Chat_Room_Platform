@@ -1,0 +1,198 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #898e94;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+/*---------- title ---------*/
+
+  .header {
+    background-color: #000000;
+    background-image: url(../img/titlebackground.png);
+    background-size: auto;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .header h1 {
+    text-align: left;
+  }
+
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+
+/*---------- left side list ---------*/
+
+  .room-list {
+    flex: 0 0 15%; /* Take up 15% of the available space */
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(../img/roomlistbackground.png);
+    background-size: cover;
+    text-align: center;
+  }
+
+  #whiteText {
+    color: #fff;
+  }
+
+  #roomInput {
+    margin-top: 10px;
+  }
+
+.create-room {/*class for button styling*/
+  padding: 5px 10px;
+  background-color: #898e94;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: opacity 0.3s ease;
+}
+
+.create-room:hover {
+  opacity: 0.6;
+}
+
+#roomListMenu {/*class for list of rooms styling*/
+  color: #c4c4c4;
+  font-size: 20px;
+  border-style: solid;
+  border-color: #c4c4c4;
+  border-width: 2px;
+  padding: 3px;
+}
+
+#roomEnterButton{
+  background-color: #898e94;
+  color: #fff;
+}
+
+/*---------------- text/chat area ---------------------*/
+
+  /*---------- header ---------*/
+  .room-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .settings {/*class for button to settings.html*/
+    display: inline-block;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    text-align: right;
+  }
+
+  .settings:hover {
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+  }
+  
+  .room-name {/*class for room title styling*/
+    padding: 20px;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .room-name h2 {
+    margin: 0;
+    margin-right: 5px;
+  }
+
+  #roomNameChange {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #roomNameButton {
+    background-color: #2e87f3;
+    color: #ffffff;
+  }
+
+  /*---------- messages ---------*/
+  .chat-container {/*general section class*/
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #chat-messages {/*section for chat messages*/
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #000000;
+    background-color: #bdbdbd;
+  }
+
+  .server{
+    color: #2889e3;
+  }
+
+  .message {
+    flex-direction: row;
+    display: inline-block;
+    align-items: center;
+    overflow-y: auto;
+    background-color: #d1d1d1;
+    border: 1px solid #757575;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+  }
+
+/*---------- sending section ---------*/
+  .chat-input {
+    display: flex;
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  #sendButton {
+    background-color: #2e87f3;
+    color: #fff;
+  }
+  
+  .send-button {/*general class for all send buttons */
+    padding: 5px 10px;
+    background-color: #898e94;
+    color: #fff;
+    border: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  .send-button:hover {
+    opacity: 0.6;
+  }
